@@ -1,0 +1,121 @@
+
+
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    background: linear-gradient(135deg, #527be2, #c57ade);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header > h1, h4{
+    text-align: center;
+    color: #f3f3f3;
+}
+
+
+/* Card sections */
+.card {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 25px; /* Makes it bubbly */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Projects inside card */
+.project-img{
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.project-img > img {
+    text-align: center;
+    max-width: 30vw;
+    max-height: 500vh;
+    border-radius: 20px;
+}
+
+.project-img > p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.project {
+    text-align: center;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.project-img1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.project-img1 > img {
+    text-align: center;
+    max-width: 15vw;
+    max-height: 50vh;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* 📱 Mobile Friendly */
+@media (max-width: 600px) {
+    .card {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+/* 📲 Tablet Friendly */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+}
